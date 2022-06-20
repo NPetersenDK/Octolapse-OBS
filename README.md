@@ -20,7 +20,7 @@ Released under the MIT LICENSE - check the LICENSE file
 # How to:
 - Download obs-ws.py and run.sh
 - Change the variables in obs-ws.py to your setup
-* Filepath has to be with / and not \, can be done in python but this is just a dirty script to get going.
+* Filepath has to be with / and not \\, can be done in python but this is just a dirty script to get going.
 * The timestamp is the Danish Timestamp format, can be changed to your liking. Look into datetime documentation.
 * OBSIP, OBSPORT, OBSPASSWORD and OBSScene (OBSScene is the scene in your OBS you would like to take a picture of.
 - Make +x on run.sh (due to Octolapse not being able to execute Python directly (i couldnt get it working atleast).
