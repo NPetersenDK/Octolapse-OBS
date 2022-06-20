@@ -19,9 +19,18 @@ Released under the MIT LICENSE - check the LICENSE file
 
 # How to:
 - Download obs-ws.py and run.sh
+- Change the variables in obs-ws.py to your setup
+* Filepath has to be with / and not \, can be done in python but this is just a dirty script to get going.
+* The timestamp is the Danish Timestamp format, can be changed to your liking. Look into datetime documentation.
+* OBSIP, OBSPORT, OBSPASSWORD and OBSScene (OBSScene is the scene in your OBS you would like to take a picture of.
 - Make +x on run.sh (due to Octolapse not being able to execute Python directly (i couldnt get it working atleast).
 - Test it locally before putting Octolapse into the mix (./run.sh)
 - Make Octolapse run run.sh (for example /home/pi/run.sh) in "External Camera Setup - Script" under the default camera.
+
+# This would not have been possible without:
+- simpleobsws - https://github.com/IRLToolkit/simpleobsws
+- OBSWebsocket - https://github.com/obsproject/obs-websocket/
+- OBS Studio - https://github.com/obsproject/obs-studio
 
 ```
  ____  _____ _____ _____ ____  ____  _____ _   _
