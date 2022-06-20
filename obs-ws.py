@@ -14,6 +14,8 @@ OBSIP = "X.X.X.X"
 OBSPORT = "4444"
 OBSWSPASSWORD = "OBS WEBSOCKET PW"
 
+OBSScene = "OctoLapse"
+
 parameters = simpleobsws.IdentificationParameters() # Create an IdentificationParameters object
 ws = simpleobsws.WebSocketClient(url = 'ws://'+OBSIP+':'+OBSPORT, password = OBSWSPASSWORD, identification_parameters = parameters)
 
@@ -23,7 +25,7 @@ async def make_request():
 
     now = datetime.now()
     date = now.strftime("%d-%m-%Y-%H-%M-%S")
-    request = simpleobsws.Request('SaveSourceScreenshot', {'sourceName': "OctoLapse", 'imageFormat': "jpg", 'imageFilePath': filepath+fileprefix+"-"+date+".png"})
+    request = simpleobsws.Request('SaveSourceScreenshot', {'sourceName': OBSScene, 'imageFormat': "jpg", 'imageFilePath': filepath+fileprefix+"-"+date+".png"})
     ret = await ws.call(request) # Perform the request
     #if ret.ok(): # Check if the request succeeded
     #    print("Request succeeded! Response data: {}".format(ret.responseData))
