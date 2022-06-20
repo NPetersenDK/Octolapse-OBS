@@ -32,6 +32,8 @@ Released under the MIT LICENSE - check the LICENSE file
 - OBSWebsocket - https://github.com/obsproject/obs-websocket/
 - OBS Studio - https://github.com/obsproject/obs-studio
 
+# Created by:
+
 ```
  ____  _____ _____ _____ ____  ____  _____ _   _
 |  _ \| ____|_   _| ____|  _ \/ ___|| ____| \ | |
