@@ -17,6 +17,12 @@ The scripts and programs are released without any support and if stuff breaks I'
 # License
 Released under the MIT LICENSE - check the LICENSE file
 
+# How to:
+- Download obs-ws.py and run.sh
+- Make +x on run.sh (due to Octolapse not being able to execute Python directly (i couldnt get it working atleast).
+- Test it locally before putting Octolapse into the mix (./run.sh)
+- Make Octolapse run run.sh (for example /home/pi/run.sh) in "External Camera Setup - Script" under the default camera.
+
 ```
  ____  _____ _____ _____ ____  ____  _____ _   _
 |  _ \| ____|_   _| ____|  _ \/ ___|| ____| \ | |
